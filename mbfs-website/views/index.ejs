@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/defaults/meta') %>
+    <title><%= title %></title>
+
+    <%if (defaultStyles === true) { %>
+      <% include partials/defaults/styling.ejs %>
+      <link rel="stylesheet" href ="#" />
+    <% } %>
+
+  </head>
+  <body>
+    <%- include('partials/components/navigation',{test:'user'}) %>
+    <% include partials/components/footer.ejs %>
+  </body>
+</html>
