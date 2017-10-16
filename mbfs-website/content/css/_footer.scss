@@ -1,0 +1,144 @@
+.footer-section {
+  display: flex;
+  flex: none;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "arial";
+  align-items: center;
+  background-color: #000;
+  background-image: url('../../images/mountain-grey(750).png' );
+  background-repeat: no-repeat;
+  background-position: 31% 10px;
+  background-size: 450px;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .footer-nav-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+
+    .left,
+    .right {
+      background-color: #00aeef;
+      width: 100%;
+      transform: perspective(60px) rotateX(-10deg);
+      margin-bottom: -3px;
+      min-width: 325px;
+
+      &:after {
+        content: "";
+        height: 100%;
+      }
+    }
+
+    .right {
+      order: 3;
+      margin-right: -20px;
+    }
+
+    .left {
+      order: 1;
+      margin-left: -20px;
+    }
+
+    .footer-nav {
+      order: 2;
+      margin: 0;
+      padding: 5px 0;
+      position: relative;
+      display: flex;
+      min-width: 325px;
+      width: 100%;
+
+      li {
+        display: flex;
+        flex: auto;
+        margin: 5px 10px;
+        justify-content: center;
+        z-index: 1;
+        padding-top: 2px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        transform: perspective(60px) rotateX(10deg);
+        top: -2px;
+        bottom: 1px;
+        left: 0;
+        right: 0;
+        border: {
+          left: #fff solid 5px;
+          right: #fff solid 5px;
+          bottom: #fff solid 4px;
+        }
+      }
+    }
+  }
+
+  .social-media-nav-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .item-wrapper {
+      padding: 10px 0;
+      width: 100%;
+      height: 100%;
+
+      a img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  .footer-featured-container {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    border-top: solid 4px #fff;
+
+    .featured-item {
+      width: 350px;
+      padding: 0 20px;
+
+      a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+          max-height: 100px;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+  #footer-disclaimer {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+
+    #fsp-cycle-container {
+      padding: 5px;
+
+      p {
+        color: #00aeef;
+        margin: 0;
+      }
+    }
+  }
+}

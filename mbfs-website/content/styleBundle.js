@@ -1,5 +1,5 @@
 const libraries = [
-    'main.min.css'
+    'footer.css'
 ]
 
 module.exports = libraries;
