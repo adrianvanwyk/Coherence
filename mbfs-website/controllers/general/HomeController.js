@@ -1,5 +1,3 @@
-var express = require('express');
-var router = express.Router();
 var styles = require('../content/styleBundle');
 
 var pageDefaults = {
@@ -8,10 +6,7 @@ var pageDefaults = {
     styles: styles
 };
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
+exports.home_get = function(req, res) {
     pageDefaults.title = 'Home || Mont Blanc Financial Services';
     res.render('index', pageDefaults);
-});
-
-module.exports = router;
+};

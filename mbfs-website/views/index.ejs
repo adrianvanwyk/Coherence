@@ -4,11 +4,9 @@
     <%- include('partials/defaults/meta') %>
     <title><%= title %></title>
 
-    <%if (defaultStyles === true) { %>
-      <% include partials/defaults/styling.ejs %>
-      <link rel="stylesheet" href ="#" />
+    <% for(var i=0; i<styles.length; i++) {%>
+    <link rel="stylesheet" href="css/<%= styles[i] %>" />
     <% } %>
-
   </head>
   <body>
     <%- include('partials/components/navigation',{test:'user'}) %>
