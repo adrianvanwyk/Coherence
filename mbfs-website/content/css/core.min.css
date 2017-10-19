@@ -1,1 +1,1 @@
-.navbar-brand{position:absolute;left:50%;margin-left:-50px !important;display:block}
+.navbar{height:100px;justify-content:space-between}.navbar .navbar-brand{width:100%}.navbar .navbar-brand img{display:block}@media (max-width: 992px){.navbar{height:56px}.navbar .navbar-brand>img{height:35px;margin:auto}}

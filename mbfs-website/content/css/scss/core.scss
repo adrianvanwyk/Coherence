@@ -1,6 +1,21 @@
-.nav-brand {
-  position: absolute;
-    left: 50%;
-    margin-left: -50px !important;  /* 50% of your logo width */
-    display: block;
+.navbar {
+  height: 100px;
+  justify-content: space-between;
+  .navbar-brand {
+    width: 100%;
+    img {
+      display: block;
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .navbar {
+    height: 56px;
+    .navbar-brand > img {
+        height: 35px;
+        margin: auto;
+      }
+  }
 }

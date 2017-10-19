@@ -5,16 +5,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #000;
   background-image: url('../img/mountain-grey(750).png');
   background-repeat: no-repeat;
   background-position: 31% 10px;
   background-size: 450px;
-
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
 
   .footer-nav-wrapper {
     display: flex;
@@ -49,7 +43,7 @@
     .footer-nav {
       order: 2;
       margin: 0;
-      padding: 5px 0;
+      padding: 0;
       position: relative;
       display: flex;
       min-width: 325px;
@@ -106,7 +100,7 @@
     justify-content: space-around;
     align-items: center;
     z-index: 1;
-    border-top: solid 4px #fff;
+    border-top: solid 3px #fff;
 
     .featured-item {
       width: 400px;
