@@ -1,5 +1,5 @@
 const libraries = [
-    //'core.min.css',
+    'core.min.css',
     'footer.min.css',
     'bootstrap.min.css'
 ]

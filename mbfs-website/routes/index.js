@@ -1,11 +1,13 @@
 var express = require('express');
 var router = express.Router();
 var styles = require('../content/styleBundle');
+var scripts = require('../content/scriptsBundle');
 
 var pageDefaults = {
     menu: true,
     footer: true,
-    styles: styles
+    styles: styles,
+    scripts: scripts
 };
 
 /* GET home page. */

@@ -11,5 +11,8 @@
     <% include partials/components/header.ejs %>
     <%- include('partials/components/navigation',{test:'The First'}) %>
     <% include partials/components/footer.ejs %>
+    <% for(var i=0; i<scripts.length; i++) {%>
+    <script src="js/<%= scripts[i] %>"></script>
+    <% } %>
   </body>
 </html>
