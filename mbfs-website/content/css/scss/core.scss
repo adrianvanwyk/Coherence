@@ -1,24 +1,24 @@
-.navbar {
-  height: 100px;
-  justify-content: space-between;
-  .navbar-brand {
-    width: 100%;
-    img {
-      display: block;
-    }
-  }
-}
-
-
-@media (max-width: 992px) {
-  .navbar {
-    height: 56px;
-    .navbar-brand > img {
-        height: 35px;
-        margin: auto;
-      }
-  }
-}
+// .navbar {
+//   height: 100px;
+//   justify-content: space-between;
+//   .navbar-brand {
+//     width: 100%;
+//     img {
+//       display: block;
+//     }
+//   }
+// }
+//
+//
+// @media (max-width: 992px) {
+//   .navbar {
+//     height: 56px;
+//     .navbar-brand > img {
+//         height: 35px;
+//         margin: auto;
+//       }
+//   }
+// }
 
 .bg-inverse {
     background-color: #000000 !important;
