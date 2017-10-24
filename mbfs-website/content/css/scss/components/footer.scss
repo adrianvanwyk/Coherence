@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-position: 31% 10px;
   background-size: 450px;
+  margin-top: -50px;
 
   .footer-nav-wrapper {
     display: flex;
@@ -16,8 +17,8 @@
     justify-content: center;
     overflow: hidden;
 
-    .left,
-    .right {
+    .left-blue,
+    .right-blue {
       background-color: #00aeef;
       width: 100%;
       transform: perspective(60px) rotateX(-10deg);
@@ -30,12 +31,12 @@
       }
     }
 
-    .right {
+    .right-blue {
       order: 3;
       margin-right: -20px;
     }
 
-    .left {
+    .left-blue {
       order: 1;
       margin-left: -20px;
     }

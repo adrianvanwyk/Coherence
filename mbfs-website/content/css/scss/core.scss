@@ -1,4 +1,9 @@
 @import "bootstrapPartials/bootstrap.scss";
 @import "components/navgiation.scss";
+@import "components/header.scss";
 @import "components/footer.scss";
 @import "components/banner.scss";
+
+.bg-inverse {
+  background-color: #000000 !important;
+}

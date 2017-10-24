@@ -1,31 +1,4 @@
 <!--
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-  <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <a class="navbar-brand" href="#">
-    <img src="img/mbfs-logo-long-white(250).png" class="hidden-md-down">
-    <img src="img/mbfs-name-only-white(250).png" class="hidden-lg-up">
-  </a>
-  <img src="img/claims-ready-mountain(250).png" alt="Getting you claims ready" class="hidden-md-down">
-</nav>
-<div class="collapse navbar-collapse bg-inverse" id="navbarSupportedContent">
-  <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-</div>
--->
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-inverse">
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +9,7 @@
     <img src="img/mbfs-logo-long-white(250).png" class="hidden-md-down">
     <img src="img/mbfs-name-only-white(250).png" class="hidden-lg-up">
   </a>
-</div>
+  </div>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -64,3 +37,40 @@
 
   <img src="img/claims-ready-mountain(250).png" alt="Getting you claims ready" class="hidden-md-down order-4">
 </nav>
+-->
+
+<header id="primary-header" class="primary-header" role="banner">
+  <div class="nav-left" role="navigation">
+    <ul class="desktop-links">
+      <li>
+        <a data-menu-trigger="product-menu" href="javascript:;" aria-expanded="false" class="has-icon">Products</a>
+      </li>
+      <li>
+        <a data-menu-trigger="info-menu" href="javascript:;" aria-expanded="false" class="has-icon">Information</a>
+      </li>
+      <li>
+        <a data-menu-trigger="none" href="/" aria-expanded="false" class="has-icon">Home page</a>
+      </li>
+    </ul>
+    <ul class="mobile-links">
+      <li>
+        <a class="reveal-menu has-icon" style="cursor: pointer" data-trigger="mobile-menu" href="javascript:;" aria-expanded="False">
+          <span class="fa fa-bars fa-2x"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-logo">
+    <a id="image-cycle-container" href="/">
+        <img id="mbp-menu-logo" class="responsive show" src="img/mbfs-logo-long-white(250).png" alt="Mont Blanc Financial Services">
+      </a>
+  </div>
+  <div class="nav-right">
+    <ul>
+      <li>
+        <img src="img/claims-ready-mountain(250).png" alt="Getting you claims ready" class="hidden-md-down order-4" />
+      </li>
+    </ul>
+  </div>
+
+</header>
