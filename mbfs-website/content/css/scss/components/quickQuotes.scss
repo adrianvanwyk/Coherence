@@ -1,0 +1,50 @@
+.quick-quotes-container {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+
+  .quickQuote-buttonGroup {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+
+    .circle-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      margin: 10px;
+      flex-direction: column;
+      text-decoration: none;
+
+      img {
+        width: 80px;
+      }
+    }
+    .car-button, .super-car-button, .plant-button {
+      border: 1px solid #3fa9f5;
+      color: #3fa9f5;
+    }
+    .truck-button, .leisure-button {
+      border: 1px solid #f15a29;
+      color: #f15a29;
+    }
+    .life-button, .general-button {
+      border: 1px solid #ed1c24;
+      color: #ed1c24;
+    }
+    .farm-button, .pension-button {
+      border: 1px solid #fbb03b;
+      color: #fbb03b;
+    }
+    .bike-button, .medical-button {
+      border: 1px solid #8cc63f;
+      color: #8cc63f;
+    }
+  }
+}
