@@ -13,8 +13,10 @@
     <%- include('partials/components/navigation',{test:'The First'}) %>
     <% include partials/components/quickLinks.ejs %>
     <% include partials/components/footer.ejs %>
+
     <% for(var i=0; i<scripts.length; i++) {%>
     <script src="js/<%= scripts[i] %>"></script>
     <% } %>
+    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
   </body>
 </html>
