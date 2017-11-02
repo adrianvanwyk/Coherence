@@ -14,4 +14,21 @@ $(document).ready(function() {
   bslideShow();
   setInterval(slideShow, 5000);
 
+
+  $('.quickQuote-buttonGroup').flickity({
+    // options
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+    pageDots: false,
+    arrowShape: {
+      x0: 10,
+      x1: 40,
+      y1: 50,
+      x2: 80,
+      y2: 50,
+      x3: 50
+    }
+  });
+
 });
