@@ -50,7 +50,6 @@
   cursor: pointer;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 3;
 
   &:hover {
     background: #fff;
@@ -66,11 +65,11 @@
   }
 
   &.previous {
-    left: 0;
+    left: -12px;
   }
 
   &.next {
-    right: 0;
+    right: -12px;
   }
 
   &:disabled {
@@ -148,6 +147,7 @@
     width: 80%;
     overflow: hidden;
     margin: 20px auto;
+    z-index: 2;
 
     .circle-button {
       display: flex;
@@ -162,6 +162,7 @@
 
       img {
         width: 50px;
+
       }
     }
 
