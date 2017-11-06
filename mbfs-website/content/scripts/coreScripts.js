@@ -31,4 +31,10 @@ $(document).ready(function() {
     }
   });
 
+
+  $('.circle-button').click(function() {
+    console.log('clicked' + $(this).attr('class'))
+  })
+
+
 });
