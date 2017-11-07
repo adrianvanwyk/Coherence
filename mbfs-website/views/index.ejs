@@ -13,14 +13,10 @@
 
   <body>
     <% include partials/components/header.ejs %>
-    <div class='content'>
-
-      <% include partials/components/contact-banner.ejs %>
-      <!-- <%- include('partials/components/navigation',{test:'The First'}) %> -->
-      <% include partials/components/quickLinks.ejs %>
-    </div>
+    <% include partials/components/contact-banner.ejs %>
+    <!-- <%- include('partials/components/navigation',{test:'The First'}) %> -->
+    <% include partials/components/contact-body.ejs %>
     <% include partials/components/footer.ejs %>
-
     <% for(var i=0; i<scripts.length; i++) {%>
       <script src="js/<%= scripts[i] %>"></script>
     <% } %>

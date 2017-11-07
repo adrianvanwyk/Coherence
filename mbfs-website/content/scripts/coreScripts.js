@@ -31,10 +31,10 @@ $(document).ready(function() {
     }
   });
 
-
-  $('.circle-button').click(function() {
-    console.log('clicked' + $(this).attr('class'))
-  })
+  var cw = $('.c-box').width();
+  $('.c-box').css({
+      'height': cw + 'px'
+  });
 
 
 });

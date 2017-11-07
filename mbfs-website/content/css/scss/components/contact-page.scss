@@ -1,0 +1,72 @@
+.four-box-row {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .c-box {
+    position: relative;
+    display: block;
+    margin: 0 1%;
+    width: 23%;
+    overflow: hidden;
+    // height: 340px;
+
+    .branch-image {
+      width: 100%;
+    }
+
+    .branch-overlay {
+      position: absolute;
+      background-color: rgba(0,0,0,0.7);
+      width: 100%;
+      height: 200%;
+      white-space: nowrap;
+      color: white;
+      font-size: 20px;
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      -moz-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease 0s;
+
+      .b-abriviation,
+      .b-details {
+        -webkit-transition: all 0.3s linear 0.15s;
+        -moz-transition: all 0.3s linear 0.15s;
+        transition: all 0.3s linear 0.15s;
+        position: relative;
+        text-shadow: 0px 2px 5px #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        opacity: 0;
+        padding: 30px;
+      }
+
+      .b-abriviation {
+        opacity: 1;
+        text-align: center;
+
+        h1 {
+          font-size: 100px;
+        }
+      }
+    }
+
+    &:hover {
+      .branch-overlay {
+        -webkit-transform: translate(0%, -50%);
+        -moz-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+
+        .b-abriviation {
+          opacity: 0;
+        }
+
+        .b-details {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
