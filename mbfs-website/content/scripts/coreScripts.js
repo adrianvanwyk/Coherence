@@ -36,8 +36,13 @@ $(document).ready(function() {
     'height': cw + 'px'
   });
 
+  if ($(window).width() < 576) {
+    $('.contact-form').css({
+      'height': 'initial'
+  })};
+
   $('.c-box').bind('touchend', function() {
-          $(this).addClass("jqhover");
+    $(this).addClass("jqhover");
   });
 
 
