@@ -6,10 +6,29 @@
   .c-box {
     position: relative;
     display: block;
-    margin: 1% 1%;
+    margin: 1%;
     width: 23%;
     overflow: hidden;
-    // height: 340px;
+
+    .custom-border {
+      input,
+      textarea {
+        border-color: #00aeef;
+      }
+
+      button {
+        background-color: #eb7035;
+        border-color: #eb7035;
+        font-weight: 600;
+        color: #eee;
+        text-shadow: 0 2px 2px #000;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: block;
+        margin: auto;
+      }
+    }
+
     .branch-image {
       width: 100%;
     }
@@ -52,7 +71,8 @@
       }
     }
 
-    &:hover, &:active {
+    &:active,
+    &:hover {
       .branch-overlay {
         -webkit-transform: translate(0%, -50%);
         -moz-transform: translate(0%, -50%);
@@ -74,13 +94,13 @@
     width: 98% !important;
   }
 }
-
 @media only screen and (max-width:768px) {
   .four-box-row {
     padding: 10px;
 
     .c-box {
       width: 48%;
+
       h3 {
         font-size: 20px;
       }
