@@ -33,7 +33,11 @@ $(document).ready(function() {
 
   var cw = $('.c-box').width();
   $('.c-box').css({
-      'height': cw + 'px'
+    'height': cw + 'px'
+  });
+
+  $('.c-box').bind('touchend', function() {
+          $(this).addClass("jqhover");
   });
 
 
